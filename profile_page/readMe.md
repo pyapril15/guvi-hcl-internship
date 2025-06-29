@@ -14,13 +14,13 @@ This project is a simple personal profile webpage created using HTML and embedde
 
 ### ✅ Page Title & Favicon
 
-- **Title tag**: `<title>John Doe - Personal Profile</title>`
+- **Title tag**: `<title>Praveen Yadav- Personal Profile</title>`
 - **Favicon**: Custom SVG-based user icon using data URI
   - Located in `<link rel="icon" type="image/x-icon" href="...">`
 
 ### ✅ Headings Structure
 
-- **Main heading (`<h1>`)**: "John Doe" - Primary page title
+- **Main heading (`<h1>`)**: "Praveen Yadav" - Primary page title
 - **Subheading (`<h2>`)**: "Web Developer & Digital Creator" - Professional subtitle
 
 ### ✅ Content Elements
