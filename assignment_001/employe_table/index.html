@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        table {
+            max-width: 100%;
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Alternate row styling using nth-child */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        /* Hover effect for better user experience */
+        tr:hover {
+            background-color: #e8f5e8;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Responsive design for smaller screens */
+        @media screen and (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+            
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            table {
+                font-size: 12px;
+            }
+            
+            th, td {
+                padding: 6px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Data Table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                    <th>Hire Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Praveen Yadav</td>
+                    <td>IT</td>
+                    <td>Software Developer</td>
+                    <td>$75,000</td>
+                    <td>2025-06-23</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Shriyan Jaiswal</td>
+                    <td>IT</td>
+                    <td>Software Developer</td>
+                    <td>$70,000</td>
+                    <td>2025-06-09</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Shiva Singh</td>
+                    <td>HR</td>
+                    <td>HR Manager</td>
+                    <td>$65,000</td>
+                    <td>2025-01-15</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Sheshank Srivastav</td>
+                    <td>Finance</td>
+                    <td>Financial Analyst</td>
+                    <td>$60,000</td>
+                    <td>2025-04-15</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>Prachi Dubey</td>
+                    <td>IT</td>
+                    <td>System Administrator</td>
+                    <td>$70,000</td>
+                    <td>2025-04-15</td>
+                </tr>
+                <tr>
+                    <td>006</td>
+                    <td>Shivesh Baranwal</td>
+                    <td>Marketing</td>
+                    <td>Marketing Specialist</td>
+                    <td>$50,000</td>
+                    <td>2023-02-28</td>
+                </tr>
+                <tr>
+                    <td>007</td>
+                    <td>Lucky Singh</td>
+                    <td>IT</td>
+                    <td>Data Scientist</td>
+                    <td>$80,000</td>
+                    <td>2025-06-23</td>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

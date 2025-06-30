@@ -1,29 +1,29 @@
 # Personal Profile Webpage - Documentation
 
-## 📋 Project Overview
+## Project Overview
 
 This project is a simple personal profile webpage created using HTML and embedded CSS. It demonstrates fundamental web development concepts including HTML structure, CSS styling, and responsive design principles.
 
-## 🎯 Assignment Requirements Met
+## Assignment Requirements Met
 
-### ✅ HTML Basic Tags & Structure
+### HTML Basic Tags & Structure
 
 - **DOCTYPE declaration**: `<!DOCTYPE html>` for HTML5 compatibility
 - **HTML semantic structure**: `<html>`, `<head>`, `<body>` elements
 - **Meta tags**: Character encoding and viewport for responsive design
 
-### ✅ Page Title & Favicon
+### Page Title & Favicon
 
 - **Title tag**: `<title>Praveen Yadav- Personal Profile</title>`
 - **Favicon**: Custom SVG-based user icon using data URI
   - Located in `<link rel="icon" type="image/x-icon" href="...">`
 
-### ✅ Headings Structure
+### Headings Structure
 
 - **Main heading (`<h1>`)**: "Praveen Yadav" - Primary page title
 - **Subheading (`<h2>`)**: "Web Developer & Digital Creator" - Professional subtitle
 
-### ✅ Content Elements
+### Content Elements
 
 - **Paragraphs (`<p>`)**: Two detailed paragraphs describing background and interests
 - **Strong emphasis (`<strong>`)**: Multiple instances highlighting key information:
@@ -32,20 +32,20 @@ This project is a simple personal profile webpage created using HTML and embedde
   - Technical skills
   - Important achievements
 
-### ✅ Image Implementation
+### Image Implementation
 
 - **Image tag (`<img>`)**: Profile picture with all required attributes
 - **Alt attribute**: "John Doe profile picture" for accessibility
 - **Dimensions**: `width="200"` and `height="200"` as specified
 - **Source**: Professional headshot from Unsplash
 
-### ✅ External Link
+### External Link
 
 - **Social media link (`<a>`)**: LinkedIn profile connection
 - **New tab opening**: `target="_blank"` attribute
 - **Professional styling**: Button-like appearance with hover effects
 
-## 🎨 CSS Styling Features
+## CSS Styling Features
 
 ### Layout & Structure
 
@@ -77,7 +77,7 @@ This project is a simple personal profile webpage created using HTML and embedde
 - **Box shadows**: Multiple shadow effects for depth and dimension
 - **Color scheme**: Professional blue and purple color palette
 
-## 📁 File Structure
+## File Structure
 
 ```
 personal-profile/
@@ -85,7 +85,7 @@ personal-profile/
 └── README.md          # This documentation file
 ```
 
-## 🚀 How to Use
+## How to Use
 
 1. **Download the HTML file**
 2. **Open in any web browser**
@@ -93,7 +93,7 @@ personal-profile/
    - Right-click → "Open with" → Your preferred browser
 3. **View the profile page**
 
-## 🛠️ Customization Guide
+## Customization Guide
 
 ### Personal Information
 
@@ -115,7 +115,7 @@ personal-profile/
 2. **Link text**: Change button text to match your preference
 3. **Add more links**: Duplicate the link structure for additional social media
 
-## 🔧 Technical Details
+## Technical Details
 
 ### HTML5 Features Used
 
@@ -137,7 +137,7 @@ personal-profile/
 - **Mobile browsers**: Responsive design works on mobile devices
 - **Fallbacks**: Font and color fallbacks for older browsers
 
-## 📱 Responsive Design
+## Responsive Design
 
 The webpage is designed to work on various screen sizes:
 
@@ -145,14 +145,14 @@ The webpage is designed to work on various screen sizes:
 - **Tablet**: Maintains design integrity with adjusted spacing
 - **Mobile**: Responsive text and image sizing
 
-## ♿ Accessibility Features
+## Accessibility Features
 
 - **Alt text**: Descriptive image alternative text
 - **Semantic HTML**: Proper heading hierarchy
 - **Color contrast**: Sufficient contrast ratios for readability
 - **Focus states**: Keyboard navigation support
 
-## 🎓 Learning Objectives Achieved
+## Learning Objectives Achieved
 
 This project demonstrates understanding of:
 
@@ -162,14 +162,14 @@ This project demonstrates understanding of:
 4. **Responsive design** principles
 5. **File organization** and documentation
 
-## 🔍 Code Quality
+## Code Quality
 
 - **Valid HTML5**: Proper syntax and structure
 - **Clean CSS**: Organized and commented styling
 - **Performance**: Optimized images and minimal external resources
 - **Best practices**: Follows web development standards
 
-## 📈 Future Enhancements
+## Future Enhancements
 
 Potential improvements for advanced versions:
 
@@ -179,7 +179,7 @@ Potential improvements for advanced versions:
 - **Portfolio section**: Showcase of projects and work
 - **Dark mode toggle**: Theme switching capability
 
-## 📞 Support
+## Support
 
 If you need help customizing or understanding any part of this webpage:
 

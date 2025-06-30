@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Yadav - Developer Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        #header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #667eea;
+            color: white;
+        }
+
+        /* Main Content Section */
+        #main-content {
+            padding: 3rem 0;
+            min-height: 70vh;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Article Styles */
+        .blog-post {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .post-header {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .post-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .post-meta {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .post-content {
+            padding: 2rem;
+        }
+
+        .post-content p {
+            margin-bottom: 1rem;
+            color: #555;
+            text-align: justify;
+        }
+
+        .post-content strong {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .project-link {
+            background-color: #667eea;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-link:hover {
+            background-color: #764ba2;
+        }
+
+        /* Featured Post */
+        .featured-post {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .featured-post .post-header {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .featured-post .post-content {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .featured-post .post-content strong {
+            color: #fff;
+        }
+
+        /* Footer Section */
+        #footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #667eea;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #555;
+            padding-top: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .post-title {
+                font-size: 1.5rem;
+            }
+
+            .post-content {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .post-content {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <section id="header">
+            <div class="header-content">
+                <h1>Praveen Yadav</h1>
+                <p>Developer Blog - Python | Flutter | Firebase</p>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#main-content">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Section -->
+        <section id="main-content">
+            <div class="blog-grid">
+                <!-- Featured About Me Article -->
+                <article class="blog-post featured-post" id="about">
+                    <div class="post-header">
+                        <h2 class="post-title">About Me</h2>
+                        <div class="post-meta">Published: June 29, 2025 | Featured Post</div>
+                    </div>
+                    <div class="post-content">
+                        <p>Hi, I'm <strong>Praveen Yadav</strong>, a passionate developer with a strong focus on
+                            <strong>Python</strong>, <strong>Flutter</strong>, and <strong>Firebase</strong>. Over the
+                            years, I have worked on a wide range of projects that reflect my love for building practical
+                            and efficient software.
+                        </p>
+
+                        <p>In Python, I've developed several real-world applications, including a <strong>Transport
+                                Management System</strong>, <strong>Student Management System</strong>,
+                            <strong>Dictionary App</strong>, <strong>QR Code Generator</strong>, and many more.
+                        </p>
+
+                        <p>On the Flutter side, I specialize in building modern, responsive websites and mobile apps.
+                            Some of my notable projects include my personal <strong>Portfolio Website</strong>, the
+                            <strong>Minati Exchange</strong>, and a full-featured <strong>Gambling & Sports Betting
+                                Platform</strong>.
+                        </p>
+
+                        <p>In 2024, I participated in a Hackathon where I developed <strong>Smart Tourism</strong>, a
+                            Flutter-based project designed to improve travel experiences using smart technology.</p>
+
+                        <p>I believe in continuous learning, exploring new tools, and building software that solves
+                            real-world problems. Whether it's crafting user-friendly mobile apps or scalable web
+                            platforms, I enjoy turning ideas into reliable digital products.</p>
+
+                        <div class="project-links">
+                            <a href="#" class="project-link">Portfolio Website</a>
+                            <a href="#" class="project-link">Minati Exchange</a>
+                            <a href="#" class="project-link">The Stake</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Python Projects Article -->
+                <article class="blog-post python-projects" id="python-work">
+                    <div class="post-header">
+                        <h2 class="post-title">Python Development</h2>
+                        <div class="post-meta">June 28, 2025 | Python</div>
+                    </div>
+                    <div class="post-content">
+                        <p>My journey with <strong>Python</strong> has been incredibly rewarding. I've built various
+                            applications that solve real-world problems, from management systems to utility tools.</p>
+
+                        <p>Key projects include a comprehensive <strong>Transport Management System</strong> for
+                            logistics coordination, a <strong>Student Management System</strong> for educational
+                            institutions, and several utility applications like a <strong>Dictionary App</strong> and
+                            <strong>QR Code Generator</strong>.
+                        </p>
+
+                        <p>Each project has taught me valuable lessons about software architecture, user experience, and
+                            the importance of writing clean, maintainable code.</p>
+                    </div>
+                </article>
+
+                <!-- Flutter Projects Article -->
+                <article class="blog-post flutter-projects" id="flutter-work">
+                    <div class="post-header">
+                        <h2 class="post-title">Flutter & Mobile Development</h2>
+                        <div class="post-meta">June 27, 2025 | Flutter</div>
+                    </div>
+                    <div class="post-content">
+                        <p>Flutter has become my go-to framework for building cross-platform applications. The ability
+                            to create beautiful, performant apps for both mobile and web from a single codebase is truly
+                            remarkable.</p>
+
+                        <p>My <strong>Portfolio Website</strong> showcases my work and skills, while <strong>Minati
+                                Exchange</strong> demonstrates my ability to build complex financial applications. The
+                            <strong>Gambling & Sports Betting Platform</strong> represents my most ambitious project to
+                            date.
+                        </p>
+
+                        <p>The 2024 Hackathon project, <strong>Smart Tourism</strong>, was particularly exciting as it
+                            combined my technical skills with innovative problem-solving for the travel industry.</p>
+                    </div>
+                </article>
+
+                <!-- Philosophy Article -->
+                <article class="blog-post developer-philosophy" id="philosophy">
+                    <div class="post-header">
+                        <h2 class="post-title">My Development Philosophy</h2>
+                        <div class="post-meta">June 26, 2025 | Insights</div>
+                    </div>
+                    <div class="post-content">
+                        <p>I believe in <strong>continuous learning</strong> and staying updated with the latest
+                            technologies and best practices. The tech industry evolves rapidly, and adaptability is key
+                            to success.</p>
+
+                        <p>My approach focuses on building <strong>practical solutions</strong> that address real-world
+                            problems. Whether it's improving business processes through management systems or enhancing
+                            user experiences through intuitive mobile apps, I strive to create meaningful impact through
+                            code.</p>
+
+                        <p>Quality, reliability, and user-centric design are at the core of everything I build. I enjoy
+                            the challenge of turning complex ideas into simple, elegant digital solutions.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section id="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p>Let's build something amazing together!</p>
+                    <p>Email: praveen@example.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Technologies</h3>
+                    <p>Python • Flutter • Firebase</p>
+                    <p>Mobile & Web Development</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Projects</h3>
+                    <p><a href="#">Portfolio Website</a></p>
+                    <p><a href="#">Minati Exchange</a></p>
+                    <p><a href="#">The Stake Platform</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Praveen Yadav. All rights reserved.</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
